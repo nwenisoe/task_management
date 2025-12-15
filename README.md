@@ -106,12 +106,14 @@ CREATE INDEX idx_tasks_priority ON tasks(priority);
 CREATE INDEX idx_tasks_status_priority ON tasks(status, priority);
 
 ## API Endpoints
-### Method	Endpoint	Description	Request Body / Params
-GET	/api/tasks	Get all tasks	None
-POST	/api/tasks	Create new task	JSON body
-GET	/api/tasks/:id	Get task by ID	URL param id
-PUT	/api/tasks/:id	Update task	URL param id, JSON body
-DELETE	/api/tasks/:id	Delete task	URL param id
+
+| Method  | Endpoint            | Description          | Request Body / Params           |
+|---------|---------------------|----------------------|---------------------------------|
+| GET     | `/api/tasks`        | Get all tasks        | None                           |
+| POST    | `/api/tasks`        | Create new task      | JSON body                      |
+| GET     | `/api/tasks/:id`    | Get task by ID       | URL param `id`                 |
+| PUT     | `/api/tasks/:id`    | Update task          | URL param `id`, JSON body      |
+| DELETE  | `/api/tasks/:id`    | Delete task          | URL param `id`                 |
 
 ### Example JSON Body
 
